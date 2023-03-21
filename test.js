@@ -12,7 +12,7 @@ function hitungCinta() {
 
   Swal.fire({
     title: "Menghitung...",
-    timer: 2000,
+    timer: 7000,
     timerProgressBar: true,
     didOpen: () => {
       Swal.showLoading();
