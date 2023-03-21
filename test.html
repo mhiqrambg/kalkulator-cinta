@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator Cinta</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<br>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">Kalkulator Cinta</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Beranda</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Tentang</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Kontak</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+		<h1>Kalkulator Cinta</h1>
+
+		<form onsubmit="return hitungCinta();">
+		  <div class="form-group">
+		    <label for="nama1">Nama Kamu:</label>
+		    <input type="text" class="form-control" id="nama1" placeholder="Masukkan Nama Kamu">
+		  </div>
+		  <div class="form-group">
+		    <label for="nama2">Nama Pasangan:</label>
+		    <input type="text" class="form-control" id="nama2" placeholder="Masukkan Nama Pasangan">
+		  </div>
+		  <button type="submit" class="btn btn-primary" id="btnHitung">Hitung</button>
+		</form>
+
+
+		<div class="result" id="result" style="display:none;">
+			<h2>Hasil:</h2>
+			<p id="persentase"></p>
+			<p id="pesan"></p>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	<script src="test.js"></script>
+</body>
+<br>
+<br>
+<footer class="footer mt-auto py-1 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Kalkulator Cinta</h5>
+        <p>Website ini adalah alat untuk menghitung persentase kecocokan antara dua orang yang sedang jatuh cinta. Silakan gunakan dengan bijak dan jangan terlalu serius dengan hasilnya!</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Link</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Tentang</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Kontak Kami</h5>
+        <address>
+          Jalan Jenderal Sudirman No. 123<br>
+          Jakarta Selatan, Indonesia<br>
+          Phone: +62 123 456789<br>
+          Email: info@kalkulatorcinta.com
+        </address>
+      </div>
+    </div>
+  </div>
+  <div class="text-center py-3">
+    <p class="mb-0">© 2023 Kalkulator Cinta. All rights reserved.</p>
+  </div>
+</footer>
+
+</html>
